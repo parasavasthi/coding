@@ -21,7 +21,7 @@ int main()
 
     //find the number of rows and column for the second matrix
     int c_b, r_b;
-    printf("what are the dimentions for matrix one : ");
+    printf("what are the dimentions for matrix two : ");
     scanf("%i %i", &r_b, &c_b);
 
     //check the compatibility of both 
