@@ -10,7 +10,7 @@ int main() {
         return 1;
     }
 
-    int *inp = (int *)malloc(N+1*sizeof(int));
+    int *inp = (int *)malloc((N+1)*sizeof(int));
     printf("input: \n");
     for(int i=0; i<N; i++) {
         scanf("%d",(inp+i));

@@ -16,7 +16,7 @@ int main()
     for(int i = 0; i<N; i++)
     {
         int isnrep = 1;
-        for(int j = 0; j<i-1; j++)
+        for(int j = 0; j<i; j++)
         {
             if(inp[i] == inp[j]) {isnrep=0; break;}
         }
