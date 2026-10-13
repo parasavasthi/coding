@@ -22,7 +22,7 @@ int main() {
     
     printf("where do you wanna place this new element: ");
     scanf("%d",&K);
-    if(K<1||K>+N+1) {
+    if(K<1||K>=N+1) {
         printf("invalid");
         return 1;
     }

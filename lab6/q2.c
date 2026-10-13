@@ -78,16 +78,28 @@ void bsort(int *inp, int N) {
 }
 
 int comp(int *inp1,int n1, int *inp2, int n2) { //returns the number of different figures in sorted arrays and returns -1 when arrays are non-comparable aka do not have same size
-    int dif=0;
+    int dif=0,a1=0,a2=0;
+
     if(n1 != n2)
         return -1;
     
-    for(int i=0; i<n1; i++) {
-        if(*(inp1+i) != *(inp2+i)) {
-            dif++;
-        }
+        while(a1!=n1&&a2!=n2) {
+    if(*(inp1+a1)>*(inp2+a2)) {
+        dif++; a2++;
     }
-
+    else if(*(inp1+a1)<*(inp2+a2)) {
+        dif++; a1++;
+    }
+    else {
+        a1++; a2++;
+    }
+    }
+    if(a1!=n1) {
+        dif+=n1-a1;
+    }
+    if(a2!=n2) {
+        dif+=n2-a2;
+    }
     return dif;
 }
 

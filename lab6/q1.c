@@ -2,6 +2,7 @@
 #include<stdlib.h>
 
 void bsort(int *inp,int N);
+
 int main() {
     int N1;
     printf("what is the length of input1: ");
